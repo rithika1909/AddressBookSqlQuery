@@ -264,6 +264,43 @@ namespace AddressBookSqlQuery
                 con.Close();
             }
         }
+        public void CountByType()
+        {
+            try
+            {
+                Connection();
+                SqlCommand com = new SqlCommand("CountByType", con);
+                com.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter da = new SqlDataAdapter(com);
+                List<Contact> addressBook = new List<Contact>();
+                DataTable dt = new DataTable();
+                con.Open();
+                da.Fill(dt);
+                con.Close();
+                foreach (DataRow dr in dt.Rows)
+                {
+                    addressBook.Add(
+                        new Contact
+                        {
+                            Type = Convert.ToString(dr["type"]),
+                            count = Convert.ToInt32(dr["count"])
+                        });
+                }
+                Console.WriteLine("No.of persons in each type are: ");
+                foreach (var data in addressBook)
+                {
+                    Console.WriteLine(data.Type + "--" + data.count);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
 
     }

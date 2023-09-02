@@ -39,6 +39,7 @@ namespace AddressBookSqlQuery
             //operation.DetailsinState("TamilNadu");
             //operation.CountInCity();
             //operation.CountInState();
+            operation.CountByType();
         }
     }
 }
