@@ -18,6 +18,6 @@ namespace AddressBookSqlQuery
         public string phonenumber { get; set; }
         public string email { get; set; }
         public int count { get; set; }
-        public string Type { get; set; }
+        public string type { get; set; }
     }
 }

@@ -106,7 +106,7 @@ Add type varchar(20);
 
  
 
---UC10
+ --uc10
 Create Procedure CountByType
 As
 Begin
@@ -128,3 +128,19 @@ End
  
 
 Select * from AddressBook;
+
+Create Procedure AddPersonValues(
+@contactId int,
+@type int
+)
+As
+Begin
+Insert into AddPerson values(@contactId,@type)
+End
+
+
+Select * from AddressBook
+Select * from AddPerson
+
+Alter Table AddressBook drop column type;
+Alter table AddressBook Add type varchar(20);
