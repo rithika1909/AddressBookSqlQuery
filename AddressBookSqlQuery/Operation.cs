@@ -368,7 +368,7 @@ namespace AddressBookSqlQuery
             foreach(var data in list)
             {
                 AddContactDetails(data);
-
+                
             }
             DateTime end = DateTime.Now;
             Console.WriteLine("Duartion without thread: " + (end - start));

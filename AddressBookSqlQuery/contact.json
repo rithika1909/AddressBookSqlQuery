@@ -1,0 +1,48 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "firstname": "Rithika",
+      "lastname": "L",
+      "address": "Madhavaram",
+      "city": "Chennai",
+      "state": "Tamilnadu",
+      "zip": 123456,
+      "phonenumber": "1234567890",
+      "email": "rithi@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Yuvanthika",
+      "lastname": "S",
+      "address": "Kattpadi",
+      "city": "Vellore",
+      "state": "TamilNadu",
+      "zip": 123456,
+      "phonenumber": "1234567890",
+      "email": "yuvanthika@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Soundarya",
+      "lastname": "S",
+      "address": "Anna Nagar",
+      "city": "Chennai",
+      "state": "TamilNadu",
+      "zip": 123456,
+      "phonenumber": "1234567890",
+      "email": "soundarya@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstname": "Riya",
+      "lastname": "Reji",
+      "address": "Annikkanadu",
+      "city": "Pathanamthitta",
+      "state": "Kerala",
+      "zip": 123456,
+      "phonenumber": "1234567890",
+      "email": "rija@gmail.com"
+    }
+  ]
+}
